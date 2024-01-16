@@ -1,0 +1,135 @@
+.group__title {
+    color: #0061f7;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    margin-bottom: 32px;
+}
+
+.group__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 32px;
+    align-items: end;
+}
+
+.group__input {
+    margin-top: 16px;
+    display: block;
+    width: 256px;
+    padding: 12px 13px;
+}
+
+.group__select {
+    margin-top: 16px;
+    display: block;
+    width: 256px;
+    padding: 12px 13px;
+}
+
+.group__input[type='time'] {
+    padding: 10px 12px;
+}
+
+.group__btn {
+    display: block;
+    width: 256px;
+    padding: 12px 13px;
+    border: 0;
+    border-radius: 8px;
+    background: #2f49d1;
+    color: #fff;
+    margin-left: auto;
+}
+
+.all-groups {
+    color: #0061f7;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    margin-bottom: 34px;
+}
+
+.group__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 32px;
+}
+
+.group__item {
+    width: 260px;
+    height: 300px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+.item__name {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    padding: 18px;
+    border-radius: 16px 16px 0px 0px;
+    background-color: #2f49d1;
+}
+
+.item__teacher-wrapper {
+    padding: 12px 12px 15px;
+}
+
+.item__img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0px 4px 15px 0px rgba(47, 73, 209, 0.30);
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mini-item-wrapper1 {
+    text-align: right;
+    font-size: 14px;
+}
+
+.card-wrapper {
+    margin-bottom: 34px;
+}
+
+// .item__teacher-number {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+.item__teacher-kun {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__teacher-vaqt {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__teacher-son {
+    display: flex;
+    justify-content: space-between;
+}
+
+.group__list {
+    height: 600px;
+    overflow-y: scroll;
+}

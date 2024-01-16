@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="container">
+        <main class="site-main">
+            <section class="site-main__nav">
+                <div class="logo">
+                    <img src="../images/logo.svg" alt="logo" class="logo__img">
+                    <p class="logo__text">CRM PANEL</p>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/hisobot.svg" alt="">
+                            <a href="../index.html" class="navbar__link">Hisobot</a>
+                        </li>
+                        <li class="navbar__item active_page">
+                            <img class="navbar__img" src="../images/student.svg" alt="">
+                            <a href="./student.html" class="navbar__link">O'quvchilar</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/group.svg" alt="">
+                            <a href="./group.html" class="navbar__link">Guruhlar</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/teacher.svg" alt="">
+                            <a href="./teacher.html" class="navbar__link">O'qituvchilar</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/subject.svg" alt="">
+                            <a href="./subject.html" class="navbar__link">Fanlar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="site-main__body">
+                <div class="title-wrapper">
+                    <h1 class="title">O'quvchilar</h1>
+                </div>
+                <div class="main-body">
+                    <div class="top-wrapper">
+                        <h3 class="student__title">Yangi o’quvchi qo’shish</h3>
+                        <form class="student__form">
+                            <label class="student__label">
+                                O'quvchi ismi
+                                <input type="text" class="student__input student-name">
+                            </label>
+                            <label class="student__label">
+                                O'quvchi familiyasi
+                                <input type="text" class="student__input student-lname">
+                            </label>
+                            <label class="student__label">
+                                Telefon raqami
+                                <input type="text" class="student__input student-number">
+                            </label>
+                            <label class="student__label">
+                                Ota-onasi ismi
+                                <input type="text" class="student__input student-parent-name">
+                            </label>
+                            <label class="student__label">
+                                Ota-onasi telefon raqami
+                                <input type="text" class="student__input student-parent-number">
+                            </label>
+                            <label class="student__label">
+                                Guruh
+                                <select class="student__select">
+                                    <option value=""></option>
+                                </select>
+                            </label>
+                            <label class="student__label">
+                                O'quvchi yoshi
+                                <input type="text" class="student__input student-age">
+                            </label>
+                            <button class="student__btn" type="submit">Qo'shish</button>
+                        </form>
+                        <div class="allstudent-wrapper">
+                            <h3 class="all-student">Bizning o’quvchilar</h3>
+                            <input type="search" class="student-search" placeholder="search">
+                        </div>
+                    </div>
+                    <div class="table-student-wraper">
+                        <table class="table table-primary table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Ism</th>
+                                <th scope="col">Familiya</th>
+                                <th scope="col">Tel.nomer</th>
+                                <th scope="col">Yo'nalish</th>
+                                <th scope="col">Yoshi</th>
+                                <th scope="col">Ota/onasini ismi</th>
+                                <th scope="col">Ota/onasini nomeri</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                              </tr>
+                            </thead>
+                            <tbody class="student-table">
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>996933210</td>
+                                <td>Matematika</td>
+                                <td>22</td>
+                                <td>Mirzoxid</td>
+                                <td>935900010</td>
+                                <td>
+                                    <button class="table-edit-btn">
+                                        <img src="../images/edit.svg" alt="edit">
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="table-delete-btn">
+                                        <img src="../images/delete.svg" alt="edit">
+                                    </button>
+                                </td>
+                              </tr>
+                              
+                        
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../js/student.js"></script>
+</body>
+</html>

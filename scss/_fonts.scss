@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "DM Sans", "Arial", "sans-serif";
+    font-weight: 400;
+    font-display: swap; 
+    src: url("../fonts/dmsans.normal.woff2") format("woff2"),
+    url("../fonts/dmsans.normal.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DM Sans", "Arial", "sans-serif";
+    font-weight: 500;
+    font-display: swap; 
+    src: url("../fonts/dmsans.medium.woff2") format("woff2"), 
+    url("../fonts/dmsans.medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DM Sans", "Arial", "sans-serif";
+    font-weight: 700;
+    font-display: swap; 
+    src: url("../fonts/dmsans.bold.woff2") format("woff2"),
+    url("../fonts/dmsans.bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter", "Arial", "sans-serif";
+    font-weight: 400;
+    font-display: swap; 
+    src: url("../fonts/inter.normal.woff2") format("woff2"),
+    url("../fonts/inter.normal.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter", "Arial", "sans-serif";
+    font-weight: 600;
+    font-display: swap; 
+    src: url("../fonts/inter.semibold.woff2") format("woff2"),
+    url("../fonts/inter.semibold.woff") format("woff");
+}

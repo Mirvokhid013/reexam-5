@@ -1,0 +1,71 @@
+.subject__add {
+    color: #0061f7;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    margin-left: 60px;
+    margin-bottom: 32px;
+}
+
+.subject__form {
+    margin-right: 60px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+.subject__label {
+    margin-left: 60px;
+    display: block;
+    margin-bottom: 16px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.subject__input {
+    width: 320px;
+    padding: 13px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(47, 73, 209, 0.60);
+    background: #fff;
+}
+
+.subject__btn {
+    display: block;
+    width: 314px;
+    border: 0;
+    border-radius: 8px;
+    background: #2f49d1;
+    color: #fff;
+}
+
+.all-subject {
+    margin-bottom: 30px;
+    margin-left: 60px;
+    color: #0061f7;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+
+.table-edit-btn {
+    border: 0;
+    background-color: transparent;
+}
+
+.table-delete-btn {
+    border: 0;
+    background-color: transparent;
+}
+
+.table-wrapper {
+    height: 300px !important;
+    overflow-y: scroll !important;
+}

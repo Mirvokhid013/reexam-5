@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="container">
+        <main class="site-main">
+            <section class="site-main__nav">
+                <div class="logo">
+                    <img src="../images/logo.svg" alt="logo" class="logo__img">
+                    <p class="logo__text">CRM PANEL</p>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/hisobot.svg" alt="">
+                            <a href="../index.html" class="navbar__link">Hisobot</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/student.svg" alt="">
+                            <a href="./student.html" class="navbar__link">O'quvchilar</a>
+                        </li>
+                        <li class="navbar__item  active_page">
+                            <img class="navbar__img" src="../images/group.svg" alt="">
+                            <a href="./group.html" class="navbar__link">Guruhlar</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/teacher.svg" alt="">
+                            <a href="./teacher.html" class="navbar__link">O'qituvchilar</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/subject.svg" alt="">
+                            <a href="./subject.html" class="navbar__link">Fanlar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="site-main__body">
+                <div class="title-wrapper">
+                    <h1 class="title">Guruhlar</h1>
+                </div>
+                <div class="main-body">
+                    <div class="top-wrapper">
+                        <h3 class="group__title">Yangi guruh qo’shish</h3>
+                        <form class="group__form">
+                            <label class="group__label">
+                                Guruh yo'nalishi
+                                <select class="group__select group__select-subject">
+                                </select>
+                            </label>
+                            <label class="group__label">
+                                Dars kunlari
+                                <select class="group__select group__select-week">
+                                </select>
+                            </label>
+                            <label class="group__label">
+                                O'qituvchi
+                                <select class="group__select group__select-teacher">
+                                </select>
+                            </label>
+                            <label class="group__label">
+                                Boshlanish vaqti
+                                <input type="time" class="group__input group-start-time">
+                            </label>
+                            <label class="group__label">
+                                Tugash vaqti
+                                <input type="time" class="group__input group-finish-time">
+                            </label>
+                            <label class="group__label">
+                                Guruh nomi
+                                <input type="text" class="group__input group-name">
+                            </label>
+                            <button type="submit" class="group__btn">Qo'shish</button>
+                        </form>
+                        <h3 class="all-groups">Mavjud guruhlar</h3>
+                        <ul class="group__list">
+                            <li class="group__item item">
+                                <h3 class="item__name">Matematika</h3>
+                                <div class="item__teacher-wrapper">
+                                    <div class="card-wrapper">
+                                        <img src="../images/2023-12-28 16.05.22.jpg" alt="" class="item__img">
+                                        <div class="mini-item-wrapper1">
+                                            <p class="item__teacher-name"><strong>O'qituvchi :</strong> Mirvokhid Saydakhmatov</p>
+                                            <p class="item__teacher-number"><strong>Tel raqam :</strong> +998996933210</p>
+                                        </div>
+                                    </div>
+                                    <div class="mini-item-wrapper2">
+                                        <p class="item__teacher-kun"><strong>Dars kunlari:</strong> DU_CHOR_JU</p>
+                                        <p class="item__teacher-vaqt"><strong>Dars vaqti:</strong> 14:00-16:00</p>
+                                        <p class="item__teacher-son"><strong>O'quvchilar soni:</strong> 25</p>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../js/group.js"></script>
+</body>
+</html>

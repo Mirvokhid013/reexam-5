@@ -1,0 +1,31 @@
+@mixin list-style {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+@mixin flexbox($row , $justify , $align) {
+    display: flex;
+    flex-direction: $row;
+    justify-content: $justify;
+    align-items: $align;    
+    
+}
+
+@mixin title-text-null {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin fonts($weight, $size, $height) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+@mixin mobile-media($maxw) {
+    @media only screen and (min-width: $maxw) {
+        @content;
+    }
+}

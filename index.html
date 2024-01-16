@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <main class="site-main">
+            <section class="site-main__nav">
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="logo" class="logo__img">
+                    <p class="logo__text">CRM PANEL</p>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item active_page">
+                            <img class="navbar__img" src="./images/hisobot.svg" alt="">
+                            <a href="./index.html" class="navbar__link">Hisobot</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="./images/student.svg" alt="">
+                            <a href="./html/student.html" class="navbar__link">O'quvchilar</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="./images/group.svg" alt="">
+                            <a href="./html/group.html" class="navbar__link">Guruhlar</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="./images/teacher.svg" alt="">
+                            <a href="./html/teacher.html" class="navbar__link">O'qituvchilar</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="./images/subject.svg" alt="">
+                            <a href="./html/subject.html" class="navbar__link">Fanlar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="site-main__body">
+                <div class="title-wrapper">
+                    <h1 class="title">Hisobot</h1>
+                </div>
+                <div class="main-body">
+                    <ul class="body__list">
+                        <li class="body__card">
+                            <div class="card__text">Jami o’quvchilar soni:</div>
+                            <span class="card__number"> <strong class="student-number"></strong> ta</span>
+                            <img class="card__img" src="./images/statistics.svg" alt="...">
+                        </li>
+                        <li class="body__card">
+                            <div class="card__text">O’qituvchilar soni:</div>
+                            <span class="card__number"> <strong class="teacher-number"></strong> ta</span>
+                            <img class="card__img" src="./images/statistics.svg" alt="...">
+                        </li>
+                        <li class="body__card">
+                            <div class="card__text">Jami fanlar soni:</div>
+                            <span class="card__number"> <strong class="subject-number"></strong> ta</span>
+                            <img class="card__img" src="./images/statistics.svg" alt="...">
+                        </li>
+                        <li class="body__card">
+                            <div class="card__text">Jami guruhlar soni</div>
+                            <span class="card__number"> <strong class="group-number"></strong> ta</span>
+                            <img class="card__img" src="./images/statistics.svg" alt="...">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/hisobot.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="container">
+        <main class="site-main">
+            <section class="site-main__nav">
+                <div class="logo">
+                    <img src="../images/logo.svg" alt="logo" class="logo__img">
+                    <p class="logo__text">CRM PANEL</p>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/hisobot.svg" alt="">
+                            <a href="../index.html" class="navbar__link">Hisobot</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/student.svg" alt="">
+                            <a href="./student.html" class="navbar__link">O'quvchilar</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/group.svg" alt="">
+                            <a href="./group.html" class="navbar__link">Guruhlar</a>
+                        </li>
+                        <li class="navbar__item">
+                            <img class="navbar__img" src="../images/teacher.svg" alt="">
+                            <a href="./teacher.html" class="navbar__link">O'qituvchilar</a>
+                        </li>
+                        <li class="navbar__item active_page">
+                            <img class="navbar__img" src="../images/subject.svg" alt="">
+                            <a href="./subject.html" class="navbar__link">Fanlar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="site-main__body">
+                <div class="title-wrapper">
+                    <h1 class="title">Fanlar</h1>
+                </div>
+                <div class="main-body">
+                    <h3 class="subject__add">Yangi fan qo’shish</h3>
+                    <label class="subject__label">
+                        Fan nomi:
+                    </label>
+                    <form class="subject__form">
+                        <input type="text" class="subject__input" placeholder="Fanni kiriting...">
+                        <button type="submit" class="subject__btn">Qo’shish</button>
+                    </form>
+                    <h3 class="all-subject">Barcha fanlar</h3>
+                    <div class="table-wrapper">
+                        <table class="table-subject table table-primary table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Fanlar nomi</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="subject-table">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/subject.js"></script>
+</body>
+</html>
