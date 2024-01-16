@@ -3,6 +3,7 @@ let teacherSubject = document.querySelector(".teacher__select");
 let elTeacherTable = document.querySelector(".teacher-table");
 let elTeacherModal = document.querySelector(".modal-wrapper");
 let elFormModal = document.querySelector(".modal-form");
+let elTeacherSearch = document.querySelector(".search-teacher");
 
 getSubject();
 
@@ -40,7 +41,7 @@ elFormTeacher.addEventListener("submit", (evt) => {
     
     postTeacher(formData);
     getTeacher();
-
+    
     evt.target[0].value = '';
     evt.target[1].value = '';
     evt.target[2].value = '';
@@ -175,3 +176,35 @@ elTeacherTable.addEventListener("click", (evt) =>{
 //     getTeacher();
 //     elTeacherModal.style.display = "none";
 // })
+
+elTeacherSearch.addEventListener("keyup", (evt) => {
+    evt.preventDefault();
+
+    if (evt.target.value.length > 0) {
+        function findName() {
+            fetch("http://localhost:9090/all-teacher?name=" + evt.target.value, {
+            method: "GET",
+        })
+        .then(res => res.json())
+        .then(data => {
+            renderTeacherData(data.data, elTeacherTable);
+        })
+        .catch(error => console.log(error));
+        }
+    
+        findName();
+    } else {
+        function findName() {
+            fetch("http://localhost:9090/all-teacher", {
+            method: "GET",
+        })
+        .then(res => res.json())
+        .then(data => {
+            renderTeacherData(data.data, elTeacherTable);
+        })
+        .catch(error => console.log(error));
+        }
+    
+        findName();
+    }
+})

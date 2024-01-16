@@ -7,7 +7,7 @@ let studentParentNumber = document.querySelector(".student-parent-number")
 let studentGroup = document.querySelector(".student__select")
 let studentAge = document.querySelector(".student-age");
 let studentTable = document.querySelector(".student-table");
-
+let studentSearch = document.querySelector(".student-search");
 
 getGroup();
 
@@ -158,3 +158,34 @@ studentTable.addEventListener("click", (evt) =>{
     }
 })
 
+studentSearch.addEventListener("keyup", (evt) => {
+    evt.preventDefault();
+
+    if (evt.target.value.length > 0) {
+        function findName() {
+            fetch("http://localhost:9090/all-student?name=m" + evt.target.value, {
+            method: "GET",
+        })
+        .then(res => res.json())
+        .then(data => {
+            renderTeacherData(data.data, studentTable);
+        })
+        .catch(error => console.log(error));
+        }
+    
+        findName();
+    } else {
+        function findName() {
+            fetch("http://localhost:9090/all-student", {
+            method: "GET",
+        })
+        .then(res => res.json())
+        .then(data => {
+            renderTeacherData(data.data, studentTable);
+        })
+        .catch(error => console.log(error));
+        }
+    
+        findName();
+    }
+})
